@@ -1,10 +1,10 @@
 <script>
-import Posts from './Posts.vue';
+import Posts from '../components/Posts.vue';
 import { store } from '../store.js';
 import axios from 'axios';
 
 export default {
-     name: 'AppMain',
+     name: 'AppProject',
 
      components: {
           Posts,
@@ -71,4 +71,4 @@ export default {
 
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss"></style>./AppMain.vue/index.js

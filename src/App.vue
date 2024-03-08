@@ -1,7 +1,7 @@
 <script>
 
 import Posts from './components/Posts.vue';
-import AppMain from './components/AppMain.vue';
+import AppMain from './pages/AppProject.vue';
 import Appheader from './components/AppHeader.vue';
 
 export default {
@@ -16,8 +16,9 @@ export default {
 <template>
   <div>
     <Appheader />
-    <AppMain />
-    <Posts />
+    <router-view></router-view>
+    <!-- <AppMain /> -->
+    <!-- <Posts /> -->
   </div>
 </template>
 
@@ -25,4 +26,4 @@ export default {
 
 @use './styles/general.scss';
 
-</style>
+</style>./pages/AppMain.vue

@@ -1,10 +1,10 @@
 <script>
-
+import { store } from '../store.js';
 export default {
-     name: 'Posts',
+     name: 'Header',
      data() {
           return {
-               posts: []
+               store
           }
      }
 
@@ -22,15 +22,11 @@ export default {
                     <div class="col-7">
                          <div class="">
                               <ul class="list-unstyled d-flex align-items-center justify-content-evenly">
-                                   <li>
-                                        <a href="#">Home</a>
+                                   <li v-for="item in store.menuItem">
+                                      <router-link :to="{ name: item.name}">{{item.label}}</router-link>
                                    </li>
-                                   <li>
-                                        <a href="#">project</a>
-                                   </li>
-                                   <li>
-                                        <a href="#">contacts</a>
-                                   </li>
+                                  
+                                   
                               </ul>
 
                          </div>
