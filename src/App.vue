@@ -1,6 +1,6 @@
 <script>
 
-import Posts from './components/Posts.vue';
+import Posts from './pages/Posts.vue';
 import AppMain from './pages/AppProject.vue';
 import Appheader from './components/AppHeader.vue';
 
@@ -26,4 +26,4 @@ export default {
 
 @use './styles/general.scss';
 
-</style>./pages/AppMain.vue
+</style>./pages/AppMain.vue./pages/Posts.vue
